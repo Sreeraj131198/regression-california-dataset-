@@ -210,13 +210,7 @@ cv_scores = cross_val_score(model, X_train, y_train,
                             cv=10, scoring='r2')
 ```
 
-| Model | Mean CV R² | Std Dev |
-|-------|-----------|---------|
-| Linear Regression | 0.5742 | 0.0312 |
-| Decision Tree | 0.6892 | 0.0445 |
-| Random Forest | **0.8123** | 0.0198 |
-| Gradient Boosting | 0.7889 | 0.0267 |
-| SVR | 0.6721 | 0.0389 |
+
 
 #### Hyperparameter Tuning
 
@@ -388,13 +382,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - California Housing dataset provided by sklearn
 - scikit-learn documentation and community
-- [Your Institution/Course Name] for project guidance
 
 ---
 
 ## 📞 Contact
 
-For questions or suggestions, please open an issue or contact [your.email@example.com](sreerajjdn89.com)
+For questions or suggestions, please open an issue or contact (sreerajjdn89@gmail.com.com)
 
 ---
 
