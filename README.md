@@ -165,21 +165,22 @@ models = {
 **Before Hyperparameter Tuning:**
 
 
-                       MSE       MAE        R2      RMSE
-Linear regression  0.642187  0.579214  0.509934  0.801366
-Decision Tree      0.787528  0.626855  0.399021  0.887428
-Random Forest      0.422664  0.461930  0.677456  0.650126
-Gradient Boost     0.430989  0.472077  0.671103  0.656498
-SVR                0.594203  0.532696  0.546552  0.770845
+|model |              MSE|      MAE|      R2|     RMSE|
+|Linear regression|  0.642187|0.579214| 0.509934|0.801366|
+|Decision Tree |     0.787528|  |0.626855|  0.399021|0.88742|
+|Random Forest|      0.422664|  |0.461930|  0.677456|  0.650126|
+|Gradient Boost|     0.430989  |0.472077  |0.671103 | 0.656498|
+|SVR                |0.594203  |0.532696  |0.546552  |0.770845|
 
 **After Hyperparameter Tuning:**
 
-                     MSE      RMSE       MAE        R2
-Linear Regression  0.642187  0.801366  0.579214  0.509934
-Decision Tree      0.525987  0.725250  0.509060  0.598608
-Random Forest      0.417083  0.645819  0.457790  0.681716
-Gradient Boosting  0.416057  0.645025  0.458290  0.682498
-SVR                0.553213  0.743783  0.502685  0.577832
+ |model|               | MSE |   | RMSE|    |MAE|    | R2|
+|--------------|       |-------|-----------|---------|-----|
+|Linear Regression    | 0.642187|  0.801366|  |0.579214|  0.509934|
+|Decision Tree          | 0.525987|  0.725250|  0.509060|  0.598608|
+|Random Forest          |0.417083|  0.645819|  0.457790|  0.681716|
+|Gradient Boosting     | 0.416057  |0.645025  |0.458290  |0.682498|
+|SVR                    |0.553213|  0.743783|  0.502685|  0.57783
 
 #### Best Performing Model
 **🏆Gradient Boosting**
@@ -193,7 +194,7 @@ Performance Metrics:
 
 #### Worst Performing Model
 **❌ Linear Regression**
-- **R² Score:** 0.50 (only 57.57% variance explained)
+- **R² Score:** 0.50 
 - **Reason:** Dataset has non-linear relationships (e.g., geographic clustering, income thresholds) that linear models cannot capture
 
 ---
@@ -258,12 +259,12 @@ dt_params = {
 
 ### 5️⃣ Selecting the Best Regression Model
 
-## 🏆 Final Model Selection: **Random Forest Regressor**
+## 🏆 Final Model Selection: **Gradient Boost Regressor**
 
 ### Justification
 
 #### Quantitative Evidence
-1. **Highest R² Score:** 0.8167 (best variance explanation)
+1. **Highest R² Score:** 0.68 (best variance explanation)
 2. **Lowest RMSE:** 0.4900 (most accurate predictions)
 3. **Lowest MAE:** 0.3156 (smallest typical error)
 4. **Consistent CV Performance:** Low standard deviation (0.0198)
